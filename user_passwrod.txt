@@ -1,2 +1,0 @@
-kalio; dev
-princewill; sudo
