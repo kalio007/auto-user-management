@@ -1,4 +1,5 @@
-# This repository contains a Bash script that reads through users and groups in a file and creates these users and groups as specified.
+# Linux Bash Script
+This repository contains a Bash script that reads through users and groups in a file and creates these users and groups as specified.
 
 Additionally, the script does the following:
 
