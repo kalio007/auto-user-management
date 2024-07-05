@@ -6,6 +6,13 @@ PASSWORD_FILE="/var/secure/user_passwords.txt"
 PASSWORD_ENCRYPTION_KEY="secure-all-things"
 USERS_FILE=$1
 
+# Generate logfiles and password files and grant the user the permissions to edit the password file
+touch $LOG_FILE
+mkdir -p /var/secure
+chmod 700 /var/secure
+touch $PASSWORD_FILE
+chmod 600 $PASSWORD_FILE
+
 # Function to check if a script is run with sudo privileges
 if [ "$(id -u)" != "0" ]; then
     echo "This script must be run with sudo. Exiting..."
